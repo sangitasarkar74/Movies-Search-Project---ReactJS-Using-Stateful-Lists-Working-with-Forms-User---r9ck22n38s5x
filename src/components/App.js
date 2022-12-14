@@ -13,7 +13,6 @@ const App = () => {
 
     function handleChange(e) {
         setInputValue(e.target.value);
-
     }
 
     return (
