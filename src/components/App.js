@@ -7,13 +7,13 @@ const App = () => {
     const [results, setResult] = useState(null);
 
     function handleClick(e) {
-        const movieList = movies.filter(movie => movie.title.includes(inputValue)).map(movie => movie.title);
+        const movieList = movies.filter(movie => movie.title === inputValue).map(movie => movie.title);
         setResult(movieList)
     }
 
     function handleChange(e) {
         setInputValue(e.target.value);
-        e.preventDefault();
+
     }
 
     return (
